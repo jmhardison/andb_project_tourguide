@@ -5,15 +5,19 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
+
 public class MainFragmentAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[] { "Food", "Parks", "Shopping", "City Services" };
     private Context context;
+    private String tabTitles[];
 
-    public MainFragmentAdapter(FragmentManager fm) {
+    public MainFragmentAdapter(FragmentManager fm, Context inContext) {
 
         super(fm);
+        context = inContext;
+        tabTitles = new String[] { context.getResources().getString(R.string.fragment_1), context.getResources().getString(R.string.fragment_2), context.getResources().getString(R.string.fragment_3), context.getResources().getString(R.string.fragment_4) };
+
     }
 
     @Override

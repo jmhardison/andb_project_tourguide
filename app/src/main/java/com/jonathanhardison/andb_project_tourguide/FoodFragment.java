@@ -30,11 +30,11 @@ public class FoodFragment extends Fragment {
 
         //create list object
         final ArrayList<GenericLocationInfoObject> itemsListArray = new ArrayList<GenericLocationInfoObject>();
-        itemsListArray.add(new GenericLocationInfoObject("The Olive Spice","123 N Foodie St, SpecialTown, MO 61234","Italian","111-411-1234", R.drawable.baseline_fastfood_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("The Charming Rose","3786 Woodrow Way, SpecialTown, MO 61234","Pizza","111-411-1232", R.drawable.baseline_fastfood_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("The Hummingbird","3947 Eagle Lane, SpecialTown, MO 61234","Wings and Beer","111-411-1233", R.drawable.baseline_fastfood_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Atlas","2729 Martha Street, SpecialTown, MO 61234","Burgers","111-411-1231", R.drawable.baseline_fastfood_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("The Hive","1193 Nutter Street, SpecialTown, MO 61234","Pub with a side of chips","111-411-1221", R.drawable.baseline_fastfood_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.food_food1_name),getString(R.string.food_food1_address),getString(R.string.food_food1_description),getString(R.string.food_food1_phone), R.drawable.baseline_fastfood_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.food_food2_name),getString(R.string.food_food2_address),getString(R.string.food_food2_description),getString(R.string.food_food2_phone), R.drawable.baseline_fastfood_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.food_food3_name),getString(R.string.food_food3_address),getString(R.string.food_food3_description),getString(R.string.food_food3_phone), R.drawable.baseline_fastfood_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.food_food4_name),getString(R.string.food_food4_address),getString(R.string.food_food4_description),getString(R.string.food_food4_phone), R.drawable.baseline_fastfood_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.food_food5_name),getString(R.string.food_food5_address),getString(R.string.food_food5_description),getString(R.string.food_food5_phone), R.drawable.baseline_fastfood_black_48));
 
         //instance adapter
         GenericItemAdapter adapter = new GenericItemAdapter(getActivity(), itemsListArray);

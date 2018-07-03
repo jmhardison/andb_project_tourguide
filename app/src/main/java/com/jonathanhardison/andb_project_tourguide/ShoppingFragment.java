@@ -30,14 +30,14 @@ public class ShoppingFragment extends Fragment {
 
         //create list object
         final ArrayList<GenericLocationInfoObject> itemsListArray = new ArrayList<GenericLocationInfoObject>();
-        itemsListArray.add(new GenericLocationInfoObject("Art a la Carte","3019 Hewes Avenue, SpecialTown, MO 61234","Art Store","111-411-2111", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Nemotors","3813 Gerald L. Bates Drive, SpecialTown, MO 61234","Motors and More","111-411-2112", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Houndhouse","1329 Ritter Avenue, SpecialTown, MO 61234","Pet Store","111-411-2121", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Relics and Riches","3807 Freedom Lane, SpecialTown, MO 61234","Pawn Shop","111-411-2122", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Stuff and Things","4752 Randall Drive, SpecialTown, MO 61234","Sewing Store","111-411-2123", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("General Goods","2005 Horizon Circle, SpecialTown, MO 61234","Groceries","111-411-2131", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Matters of Time","4317 Patterson Road, SpecialTown, MO 61234","Clock Store","111-411-2132", R.drawable.baseline_local_mall_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("The Seam Theme","768 Lunetta Street, SpecialTown, MO 61234","Pants Repair","111-411-2133", R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop1_name),getString(R.string.shop_shop1_address),getString(R.string.shop_shop1_description),getString(R.string.shop_shop1_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop2_name),getString(R.string.shop_shop2_address),getString(R.string.shop_shop2_description),getString(R.string.shop_shop2_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop3_name),getString(R.string.shop_shop3_address),getString(R.string.shop_shop3_description),getString(R.string.shop_shop3_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop4_name),getString(R.string.shop_shop4_address),getString(R.string.shop_shop4_description),getString(R.string.shop_shop4_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop5_name),getString(R.string.shop_shop5_address),getString(R.string.shop_shop5_description),getString(R.string.shop_shop5_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop6_name),getString(R.string.shop_shop6_address),getString(R.string.shop_shop6_description),getString(R.string.shop_shop6_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop7_name),getString(R.string.shop_shop7_address),getString(R.string.shop_shop7_description),getString(R.string.shop_shop7_phone), R.drawable.baseline_local_mall_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.shop_shop8_name),getString(R.string.shop_shop8_address),getString(R.string.shop_shop8_description),getString(R.string.shop_shop8_phone), R.drawable.baseline_local_mall_black_48));
 
         //instance adapter
         GenericItemAdapter adapter = new GenericItemAdapter(getActivity(), itemsListArray);

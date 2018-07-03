@@ -28,10 +28,10 @@ public class ParksFragment extends Fragment {
 
         //create list object
         final ArrayList<ParkInfoObject> itemsListArray = new ArrayList<ParkInfoObject>();
-        itemsListArray.add(new ParkInfoObject("Park McParky Face","300 E Park Rd, SpecialTown, MO 61234","Amphitheater, Benches, Grill, Parking", R.drawable.park1));
-        itemsListArray.add(new ParkInfoObject("Pocket Park","213 N Main, SpecialTown, MO 61234","Benches", R.drawable.park2));
-        itemsListArray.add(new ParkInfoObject("D' Lake Park","440 N Bailey Avenue, SpecialTown, MO 61234","Paved Parking Area, Picnic Tables, Lake", R.drawable.park3));
-        itemsListArray.add(new ParkInfoObject("PaaaaarrK Park","440 N Bailey Avenue, SpecialTown, MO 61234","Grass To Sits On", R.drawable.park4));
+        itemsListArray.add(new ParkInfoObject(getString(R.string.park_park1_name),getString(R.string.park_park1_address),getString(R.string.park_park1_amenities), getString(R.string.park_default_description), R.drawable.park1));
+        itemsListArray.add(new ParkInfoObject(getString(R.string.park_park2_name),getString(R.string.park_park2_address),getString(R.string.park_park2_amenities), getString(R.string.park_default_description), R.drawable.park2));
+        itemsListArray.add(new ParkInfoObject(getString(R.string.park_park3_name),getString(R.string.park_park3_address),getString(R.string.park_park3_amenities), getString(R.string.park_default_description), R.drawable.park3));
+        itemsListArray.add(new ParkInfoObject(getString(R.string.park_park4_name),getString(R.string.park_park4_address),getString(R.string.park_park4_amenities), getString(R.string.park_default_description), R.drawable.park4));
 
         //instance adapter
         ParkItemAdapter adapter = new ParkItemAdapter(getActivity(), itemsListArray);

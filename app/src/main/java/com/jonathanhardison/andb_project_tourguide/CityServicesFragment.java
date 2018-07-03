@@ -30,9 +30,9 @@ public class CityServicesFragment extends Fragment {
 
         //create list object
         final ArrayList<GenericLocationInfoObject> itemsListArray = new ArrayList<GenericLocationInfoObject>();
-        itemsListArray.add(new GenericLocationInfoObject("Fire Department","2483 Black Stallion Road, SpecialTown, MO 61234","Fire and Rescue","111-411-2311", R.drawable.baseline_local_shipping_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Police Department","3434 Turkey Pen Lane, SpecialTown, MO 61234","Police and Jail","111-411-2322", R.drawable.baseline_local_taxi_black_48));
-        itemsListArray.add(new GenericLocationInfoObject("Library","3432 Leroy Lane, SpecialTown, MO 61234","We have the books.","111-411-2333", R.drawable.baseline_local_library_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.city_city1_name),getString(R.string.city_city1_address),getString(R.string.city_city1_description),getString(R.string.city_city1_phone), R.drawable.baseline_local_shipping_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.city_city2_name),getString(R.string.city_city2_address),getString(R.string.city_city2_description),getString(R.string.city_city2_phone), R.drawable.baseline_local_taxi_black_48));
+        itemsListArray.add(new GenericLocationInfoObject(getString(R.string.city_city3_name),getString(R.string.city_city3_address),getString(R.string.city_city3_description),getString(R.string.city_city3_phone), R.drawable.baseline_local_library_black_48));
 
         //instance adapter
         GenericItemAdapter adapter = new GenericItemAdapter(getActivity(), itemsListArray);

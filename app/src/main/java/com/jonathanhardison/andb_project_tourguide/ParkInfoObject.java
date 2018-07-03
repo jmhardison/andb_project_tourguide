@@ -1,5 +1,6 @@
 package com.jonathanhardison.andb_project_tourguide;
 
+
 public class ParkInfoObject extends BaseInfoObject {
     private String Amenities;
 
@@ -10,8 +11,8 @@ public class ParkInfoObject extends BaseInfoObject {
      * @param inAmenities
      * @param inImageID
      */
-    public ParkInfoObject(String inName, String inAddress, String inAmenities, int inImageID) {
-        super(inName, inAddress, "Park", inImageID);
+    public ParkInfoObject(String inName, String inAddress, String inAmenities, String inDescription, int inImageID) {
+        super(inName, inAddress, inDescription, inImageID);
         Amenities = inAmenities;
     }
 
