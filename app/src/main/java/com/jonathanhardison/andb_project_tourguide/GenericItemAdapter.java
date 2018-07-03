@@ -3,15 +3,12 @@ package com.jonathanhardison.andb_project_tourguide;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 public class GenericItemAdapter extends ArrayAdapter<GenericLocationInfoObject> {
@@ -68,19 +65,7 @@ public class GenericItemAdapter extends ArrayAdapter<GenericLocationInfoObject> 
             iconImageView.setVisibility(View.GONE);
         }
 
-        //get the linear layout right
-        //LinearLayout rightLayout = (LinearLayout) listItemView.findViewById(R.id.rightLinearLayout);
-        //int colortouse = ContextCompat.getColor(getContext(), backgroundColor);
-        //rightLayout.setBackgroundColor(colortouse);
-
-        //LinearLayout rightLayout2 = (LinearLayout) listItemView.findViewById(R.id.rightLinearLayout2);
-        //rightLayout2.setBackgroundColor(colortouse);
-
-        // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
-        // the ListView.
+        //finally return the view
         return listItemView;
-
-
-
     }
 }

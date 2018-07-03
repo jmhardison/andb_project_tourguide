@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">andb_project_tourguide</string>
+    <string name="app_name">SpecialTown Tour Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="parkListPlaceholderName">Object Name</string>
+    <string name="parkListPlaceholderAddress">Address</string>
+    <string name="parkListPlaceholderAmenities">Amenities</string>
+    <string name="generalListPlaceholderName">Object Name</string>
+    <string name="generalListPlaceholderDescription">Description</string>
+    <string name="generalListPlaceholderAddress">Address</string>
+    <string name="generalListPlaceholderPhone">Phone</string>
 </resources>

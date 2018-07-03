@@ -1,18 +1,18 @@
 package com.jonathanhardison.andb_project_tourguide;
 
 public class ParkInfoObject extends BaseInfoObject {
-    private String Ammenities;
+    private String Amenities;
 
     /**
-     * ParkInfo Object init with objects.
+     * ParkInfo Object init with objects and image.
      * @param inName
      * @param inAddress
-     * @param inDescription
      * @param inAmenities
+     * @param inImageID
      */
-    public ParkInfoObject(String inName, String inAddress, String inDescription, String inAmenities) {
-        super(inName, inAddress, inDescription);
-        Ammenities = inAmenities;
+    public ParkInfoObject(String inName, String inAddress, String inAmenities, int inImageID) {
+        super(inName, inAddress, "Park", inImageID);
+        Amenities = inAmenities;
     }
 
     /**
@@ -20,6 +20,6 @@ public class ParkInfoObject extends BaseInfoObject {
      * @return
      */
     public String getAmenities(){
-        return Ammenities;
+        return Amenities;
     }
 }

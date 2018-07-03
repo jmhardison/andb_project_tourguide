@@ -14,7 +14,6 @@ public class MainFragmentAdapter extends FragmentPagerAdapter {
     public MainFragmentAdapter(FragmentManager fm) {
 
         super(fm);
-        this.context = context;
     }
 
     @Override
@@ -22,15 +21,12 @@ public class MainFragmentAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new FoodFragment();
         } else if (position == 1){
-            //return new FamilyFragment();
-            return new Fragment();
+            return new ParksFragment();
         } else if (position == 2){
-            //return new ColorsFragment();
-            return new Fragment();
+            return new ShoppingFragment();
         }
         else{
-            //return new PhrasesFragment();
-            return new Fragment();
+            return new CityServicesFragment();
         }
     }
 

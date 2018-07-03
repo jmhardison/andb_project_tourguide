@@ -9,19 +9,14 @@
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         app:tabMode="fixed"
-        android:background="@color/colorPrimary"
-        app:tabTextColor="#A8A19E"
-        app:tabSelectedTextColor="#FFFFFF"
-        app:tabIndicatorColor="#FFFFFF"
-        app:elevation="0dp"
-        />
+        app:tabTextColor="@color/tabTextColor"
+        app:tabSelectedTextColor="@color/tabSelectedText"
+        app:tabIndicatorColor="@color/tabSelectedText"
+        style="@style/tabLayoutStyle" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        style="@style/viewPagerStyle" />
 
 </LinearLayout>

@@ -2,23 +2,18 @@ package com.jonathanhardison.andb_project_tourguide;
 
 public class GenericLocationInfoObject extends BaseInfoObject {
     private String PhoneNumber;
-    private String Website;
-    private String Hours;
 
     /**
-     * Generic Location Info Object init with objects.
+     * Generic location info object init wit objects and image
      * @param inName
      * @param inAddress
      * @param inDescription
      * @param inPhoneNumber
-     * @param inWebsite
-     * @param inHours
+     * @param inImageID
      */
-    public GenericLocationInfoObject(String inName, String inAddress, String inDescription, String inPhoneNumber, String inWebsite, String inHours) {
-        super(inName, inAddress, inDescription);
+    public GenericLocationInfoObject(String inName, String inAddress, String inDescription, String inPhoneNumber, int inImageID) {
+        super(inName, inAddress, inDescription, inImageID);
         PhoneNumber = inPhoneNumber;
-        Website = inWebsite;
-        Hours = inHours;
     }
 
     /**
@@ -27,21 +22,5 @@ public class GenericLocationInfoObject extends BaseInfoObject {
      */
     public String getPhoneNumber(){
         return PhoneNumber;
-    }
-
-    /**
-     * Get website of object.
-     * @return
-     */
-    public String getWebsite(){
-        return Website;
-    }
-
-    /**
-     * Get hours of object.
-     * @return
-     */
-    public String getHours(){
-        return Hours;
     }
 }

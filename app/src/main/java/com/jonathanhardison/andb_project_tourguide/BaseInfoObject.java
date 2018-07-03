@@ -4,7 +4,7 @@ public class BaseInfoObject {
     private String Name;
     private String Address;
     private String Description;
-    private int ImageID = NO_IMAGE_ID;
+    private int ImageID;
 
     //statics
     private static int NO_IMAGE_ID = -1;

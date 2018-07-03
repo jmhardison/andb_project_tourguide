@@ -1,65 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="180dp"
-    android:minHeight="180dp"
-    android:orientation="horizontal"
-    android:background="@android:color/darker_gray"
-    >
+    style="@style/parkListTopLevelLayoutStyle">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerInside"
         android:id="@+id/image_view"
-        />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        style="@style/parkListImageStyle" />
+    <LinearLayout style="@style/parkListSecondLevelLayoutStyle">
         <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="16dp"
             android:id="@+id/rightLinearLayout"
-            >
+            style="@style/parkListThirdLevelLayoutStyle">
             <TextView
-
-
                 android:id="@+id/name_text"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="3"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:gravity="bottom"
-                android:textAppearance="?android:textAppearanceMedium"
-                tools:text="Object Name" />
+                tools:text="@string/parkListPlaceholderName"
+                style="@style/parkListNameTextViewStyle" />
 
             <TextView
                 android:id="@+id/address_text"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                tools:text="Address"
-                android:gravity="top"
-                android:textColor="@android:color/white"
-                android:textAppearance="?android:textAppearanceMedium"/>
+                tools:text="@string/parkListPlaceholderAddress"
+                style="@style/parkListGeneralTextViewStyle" />
 
             <TextView
                 android:id="@+id/amenities_text"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                tools:text="Amenities"
-                android:gravity="top"
-                android:textColor="@android:color/white"
-                android:textAppearance="?android:textAppearanceMedium"/>
+                style="@style/parkListGeneralTextViewStyle"
+                tools:text="@string/parkListPlaceholderAmenities"/>
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tabElevation">0dp</dimen>
+    <dimen name="generalListminHeight">115dp</dimen>
+    <dimen name="generalListImageSize">80dp</dimen>
+    <dimen name="generalListLineaLayoutPaddingBottom">15dp</dimen>
+    <dimen name="generalListLinearLayoutPaddingLeft">16dp</dimen>
+    <dimen name="generalListTextViewHeight">0dp</dimen>
+    <dimen name="parkListLayoutHeight">180dp</dimen>
+    <dimen name="parkListLayoutMinHeight">180dp</dimen>
+    <dimen name="parkListLayoutPaddingLeft">16dp</dimen>
+    <dimen name="parkListTextHeight">0dp</dimen>
+    <dimen name="parkListNameTextSize">25sp</dimen>
+    <dimen name="generalListTextSize">12sp</dimen>
+</resources>
