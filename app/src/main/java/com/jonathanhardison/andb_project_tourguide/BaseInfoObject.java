@@ -10,19 +10,6 @@ public class BaseInfoObject {
     private static int NO_IMAGE_ID = -1;
 
     /**
-     * Base init with objects.
-     * @param inName
-     * @param inAddress
-     * @param inDescription
-     */
-    public BaseInfoObject(String inName, String inAddress, String inDescription){
-        Name = inName;
-        Address = inAddress;
-        Description = inDescription;
-        ImageID = NO_IMAGE_ID;
-    }
-
-    /**
      * Base init with objects and image id.
      * @param inName
      * @param inAddress
